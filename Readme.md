@@ -1,6 +1,6 @@
 # Acts as chain
 
-Define a set methods that should be chainable.
+Define a set of methods that should be chainable.
 
 ## Example
 

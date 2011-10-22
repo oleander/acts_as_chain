@@ -4,8 +4,8 @@ require File.expand_path('../lib/acts_as_chain/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Linus Oleander"]
   gem.email         = ["linus@oleander.nu"]
-  gem.description   = %q{Define a set methods that should be chainable}
-  gem.summary       = %q{Define a set methods that should be chainable}
+  gem.description   = %q{Define a set of methods that should be chainable}
+  gem.summary       = %q{Define a set of methods that should be chainable}
   gem.homepage      = "https://github.com/oleander/acts_as_chain"
 
   gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
