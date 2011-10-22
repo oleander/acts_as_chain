@@ -16,6 +16,8 @@ describe ActsAsChain do
   end
   
   it "should be able to handle more than one chain" do
-    object.fake1("one").fake2("two").fake1.should eq("one")
+    object.fake1("one").fake2("two")
+    object.fake1.should eq("one")
+    object.fake2.should eq("two")
   end
 end
