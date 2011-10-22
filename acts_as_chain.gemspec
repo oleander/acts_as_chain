@@ -16,5 +16,4 @@ Gem::Specification.new do |gem|
   gem.version       = ActsAsChain::VERSION
     
   s.add_development_dependency("rspec")
-  s.required_ruby_version = "~> 1.9.0"
 end
