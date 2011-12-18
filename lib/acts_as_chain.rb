@@ -6,9 +6,13 @@ class Object
       define_method method do |*args|
         if args.empty?
           instance_variable_get("@#{method.to_s}")
-        else
+        elsif args.one?
           tap { 
             instance_variable_set("@#{method.to_s}", args.first)
+          }
+        else
+          tap { 
+            instance_variable_set("@#{method.to_s}", args)
           }
         end
       end

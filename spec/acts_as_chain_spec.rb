@@ -20,4 +20,8 @@ describe ActsAsChain do
     object.fake1.should eq("one")
     object.fake2.should eq("two")
   end
+  
+  it "should be able to handle multiply arguments" do
+    object.fake1("one", "two").fake1.should eq(["one", "two"])
+  end
 end
